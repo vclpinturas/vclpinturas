@@ -22,10 +22,12 @@ export default function Home() {
             Destaque cada detalhe com a perfeição que sua casa ou empresa merece.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition md:w-auto">
-              Faça um orçamento
-            </button>
-            <Link 
+            <Link href="https://wa.me/5586995407002?text=Olá, gostaria de solicitar um orçamento para pintura" target="_blank">
+              <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition md:w-auto">
+                Faça um orçamento
+              </button>
+            </Link>
+            <Link
               href="/servicos"
               className="px-6 py-3 border border-white rounded-lg hover:bg-white hover:text-gray-800 transition md:w-auto text-center"
             >
@@ -58,8 +60,8 @@ export default function Home() {
 
       <section className="py-16 text-center w-full">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">Nossos Trabalhos</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="shadow-lg rounded-lg overflow-hidden">
+        <div className="grid grid-cols-[repeat(auto-fill,_minmax(320px,_1fr))] gap-8">
+        <div className="shadow-lg rounded-lg overflow-hidden">
             <Image src={HeroIMG} alt="trabalho 1" width={500} height={300} className="object-cover w-full" />
           </div>
           <div className="shadow-lg rounded-lg overflow-hidden">
