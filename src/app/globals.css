@@ -19,13 +19,13 @@ section {
 
 @keyframes pulseColor {
   0% {
-    background-color: #e0e0e0; /* cor mais clara */
+    background-color: #e0e0e0;
   }
   50% {
-    background-color: #b0b0b0; /* cor intermediária */
+    background-color: #b0b0b0; 
   }
   100% {
-    background-color: #e0e0e0; /* volta à cor clara */
+    background-color: #e0e0e0; 
   }
 }
 

@@ -23,7 +23,7 @@ const ProductsList = ({ demoMode = false }) => {
     fetchImages();
   }, []);
 
-  const imagesToDisplay = demoMode ? images.slice(0, 6) : images;
+  const imagesToDisplay = demoMode && images ? images.slice(0, 6) : images;
 
   return (
     <section className="py-12 px-4 w-full">
