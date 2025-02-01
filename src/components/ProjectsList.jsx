@@ -12,18 +12,19 @@ const ProductsList = ({ demoMode = false }) => {
       try {
         const res = await fetch("/api/cloudinary");
         const data = await res.json();
+        console.log(data); 
         setImages(data);
       } catch (error) {
         console.error("Erro ao buscar imagens:", error);
       } finally {
         setLoading(false);
       }
-    };
+    };    
 
     fetchImages();
   }, []);
 
-  const imagesToDisplay = demoMode && images ? images.slice(0, 6) : images;
+  const imagesToDisplay = demoMode && Array.isArray(images) ? images.slice(0, 6) : images;
 
   return (
     <section className="py-12 px-4 w-full">
