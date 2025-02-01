@@ -12,7 +12,6 @@ const ProductsList = ({ demoMode = false }) => {
       try {
         const res = await fetch("/api/cloudinary");
         const data = await res.json();
-        console.log(data); 
         setImages(data);
       } catch (error) {
         console.error("Erro ao buscar imagens:", error);

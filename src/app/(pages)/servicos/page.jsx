@@ -57,6 +57,7 @@ export default function Servicos() {
         </p>
         <a
           href="https://wa.me/5511999999999"
+          aria-label="Solicite um orçamento para pintura"
           className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition"
         >
           Solicite um Orçamento

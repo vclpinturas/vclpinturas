@@ -1,8 +1,8 @@
-import { Mail, Phone, Send, MapPin } from "lucide-react";
+import { Phone, Send } from "lucide-react";
 import Link from "next/link";
 import image from "../../../../public/images/wall-painted.jpeg";
 
-export default function Servicos() {
+export default function Contato() {
   return (
     <main
       className="min-h-screen flex items-center justify-center pt-[60px] md:p-4"
