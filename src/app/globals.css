@@ -16,3 +16,27 @@ body {
 section {
   padding: 0 1rem;
 }
+
+@keyframes pulseColor {
+  0% {
+    background-color: #e0e0e0; /* cor mais clara */
+  }
+  50% {
+    background-color: #b0b0b0; /* cor intermediária */
+  }
+  100% {
+    background-color: #e0e0e0; /* volta à cor clara */
+  }
+}
+
+@keyframes resize {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
