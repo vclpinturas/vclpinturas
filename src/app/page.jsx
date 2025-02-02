@@ -8,35 +8,34 @@ export const phoneNumber = "5517997575310"
 export default function Home() {
   return (
     <main className="flex flex-col items-center">
-      <section className="relative w-full h-[80vh] md:h-screen flex items-center justify-center text-white px-4">
+      <section className="relative w-full h-[80vh] md:h-screen flex items-center justify-center text-white p-0">
         <Image
           src={HeroIMG}
-          layout="fill"
-          objectFit="cover"
           alt="Imagem de fundo com serviço de pintura residencial e comercial, mostrando profissionais pintando uma parede"
           priority
+          className="object-cover w-full h-full"
         />
 
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
         <div className="absolute text-center px-6 max-w-3xl">
-          <h1 className="text-2xl md:text-4xl font-bold mb-4">
+          <h1 className="text-xl sm:text-2xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8">
             Transforme Seu Ambiente com Pintura Residencial e Comercial de Qualidade
           </h1>
-          <p className="text-base md:text-lg mb-6">
+          <p className="text-sm sm:text-base md:text-lg mb-4 sm:mb-6 md:mb-8">
             Destaque cada detalhe com a perfeição que sua casa ou empresa merece. A VCL Pinturas é especializada em serviços de pintura de alta qualidade.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               href={`https://wa.me/${phoneNumber}?text=Olá, gostaria de solicitar um orçamento para pintura`}
               target="_blank"
-              className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition w-4/5 max-w-xs sm:w-auto text-center"
+              className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition w-72 max-w-xs sm:w-auto text-center"
             >
               Solicite um Orçamento
             </Link>
             <Link
               href="/servicos"
-              className="px-6 py-3 border border-white rounded-lg hover:bg-white hover:text-gray-800 transition w-4/5 max-w-xs sm:w-auto text-center text-white"
+              className="px-6 py-3 border border-white rounded-lg hover:bg-white hover:text-gray-800 transition w-72 max-w-xs sm:w-auto text-center text-white"
             >
               Veja Nossos Serviços
             </Link>
