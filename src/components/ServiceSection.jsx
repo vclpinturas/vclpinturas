@@ -47,7 +47,7 @@ const services = [
 
 export default function ServiceSection() {
   return (
-    <section className="grid gap-3 grid-cols-2 sm:grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))]">
+    <section className="grid gap-3 grid-cols-2 sm:grid-cols-4">
       {services.map((service, index) => (
         <div key={index} className="bg-gray-800 text-gray-200 p-4 rounded-md shadow-md flex flex-col items-center text-center">
           <Image

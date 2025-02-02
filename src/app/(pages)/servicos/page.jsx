@@ -1,7 +1,7 @@
 import ServiceSection from "@/components/ServiceSection";
-import image from "../../../../public/images/wall-painted.jpeg";
 import ProductsList from "@/components/ProjectsList";
 import Link from "next/link";
+import { phoneNumber } from "@/app/page";
 
 export default function Servicos() {
   return (
@@ -24,7 +24,8 @@ export default function Servicos() {
           Entre em contato para obter um orçamento e transformar sua casa ou estabelecimento com a nossa pintura de qualidade.
         </p>
         <Link
-          href="https://wa.me/5511999999999"
+          href={`https://wa.me/${phoneNumber}`}
+          target="_blank"
           aria-label="Solicite um orçamento para pintura"
           className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition"
         >

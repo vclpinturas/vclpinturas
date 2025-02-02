@@ -1,6 +1,7 @@
 import { Phone, Send } from "lucide-react";
 import Link from "next/link";
 import image from "../../../../public/images/wall-painted.jpeg";
+import { phoneNumber } from "@/app/page";
 
 export default function Contato() {
   return (
@@ -17,7 +18,7 @@ export default function Contato() {
 
           <div className="space-y-4">
             <Link
-              href="https://wa.me/5599999999999"
+              href={`https://wa.me/${phoneNumber}?text=Olá, gostaria de solicitar um orçamento para pintura`}
               target="_blank"
               className="flex items-center gap-3 bg-green-600 text-white py-3 px-6 rounded-lg font-medium text-md sm:text-lg hover:bg-green-700 transition-all w-full md:w-auto"
             >
@@ -26,21 +27,36 @@ export default function Contato() {
 
             <div className="flex flex-col gap-2">
               <Link
-                href="tel:+5599999999999"
+                href={`tel:+${phoneNumber}`}
+                target="_blank"
                 className="flex items-center gap-3 text-gray-700 text-lg font-medium hover:underline"
               >
-                <Phone size={22} /> (99) 99999-9999
+                <Phone size={22} /> +55 (17) 99757-5310
               </Link>
             </div>
+          </div>
+
+          <div className="space-y-4">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Nossa Localização</h2>
+            <p className="text-gray-600 mb-4">
+              <strong>R. Marajó, N° 1258 - Vila Virginia, Ribeirão Preto - SP</strong><br />
+              CEP: <strong>14030-500</strong>. <br /> Acesse nosso perfil no Google para mais detalhes:
+              <Link
+                href="https://g.co/kgs/Ftm2ykh"
+                target="_blank"
+                className="text-blue-600 hover:underline"
+              >
+                Ver no Google Maps
+              </Link>
+            </p>
           </div>
         </div>
 
         <div className="mt-8 w-full md:w-1/2 h-full p-4">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Nossa Localização</h2>
           <div className="h-full">
             <iframe
               className="w-full h-96 md:h-80 rounded-lg"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11302.112482611378!2d-58.4431815!3d-34.6036844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbdfbb117189%3A0x17c07e408cb8490!2sObelisco%20de%20Buenos%20Aires!5e0!3m2!1sen!2sbr!4v1672580521205!5m2!1sen!2sbr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22937.84522005369!2d-47.8271478!3d-21.1742541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b993bb8031ec57%3A0xa5d11f60bc2c0847!2sR.%20Maraj%C3%B3%2C%20%201258%20-%20Vila%20Virginia%2C%20Ribeir%C3%A3o%20Preto%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1672568813202!5m2!1spt-BR!2sbr&zoom=14"
               loading="lazy"
               allowFullScreen
             ></iframe>
