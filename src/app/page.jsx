@@ -22,7 +22,7 @@ export default function Home() {
             Transforme Seu Ambiente com Pintura Residencial e Comercial de Qualidade
           </h1>
           <p className="text-base md:text-lg mb-6">
-            Destaque cada detalhe com a perfeição que sua casa ou empresa merece.
+            Destaque cada detalhe com a perfeição que sua casa ou empresa merece. A VCL Pinturas é especializada em serviços de pintura de alta qualidade.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
@@ -45,9 +45,8 @@ export default function Home() {
       <section className="py-16 text-center w-full">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">Quem Somos</h2>
         <p className="max-w-4xl mx-auto text-base md:text-lg text-gray-700">
-          Somos especialistas em pintura residencial e comercial, com anos de experiência oferecendo serviços de alta qualidade. Se você busca profissionais que garantem um acabamento perfeito para sua casa ou empresa, você está no lugar certo. Oferecemos soluções para interiores e exteriores, com atenção a cada detalhe e comprometimento com prazos.
+          A VCL Pinturas é especializada em pintura residencial e comercial, com anos de experiência oferecendo serviços de alta qualidade. Se você busca profissionais que garantem um acabamento perfeito para sua casa ou empresa, você está no lugar certo. Oferecemos soluções para interiores e exteriores, com atenção a cada detalhe e compromisso com os prazos.
         </p>
-
       </section>
 
       <section className="py-16 text-center w-full">

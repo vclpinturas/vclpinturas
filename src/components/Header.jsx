@@ -9,7 +9,7 @@ import { Menu, X } from "lucide-react";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const headerBg = "bg-gradient-to-r from-blue-900 to-gray-700"; 
+  const headerBg = "bg-gradient-to-r from-blue-800 to-gray-700"; 
 
   return (
     <header className={`p-4 fixed w-full z-50 flex justify-between items-center text-white transition-all duration-300 ${headerBg}`}>

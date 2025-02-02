@@ -47,14 +47,14 @@ const services = [
 
 export default function ServiceSection() {
   return (
-    <section className="grid gap-3 grid-cols-2 sm:grid-cols-[repeat(auto-fill,_minmax(200px,_1fr))]">
+    <section className="grid gap-3 grid-cols-2 sm:grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))]">
       {services.map((service, index) => (
         <div key={index} className="bg-gray-800 text-gray-200 p-4 rounded-md shadow-md flex flex-col items-center text-center">
           <Image
             src={service.imageSrc}
             alt={service.title}
-            width={200} // Reduzindo a largura da imagem
-            height={130} // Reduzindo a altura da imagem
+            width={200} 
+            height={130}
             className="rounded-md mb-2"
           />
           <h2 className="text-sm sm:text-base font-semibold mb-2">{service.title}</h2>
