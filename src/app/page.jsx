@@ -14,6 +14,9 @@ export default function Home() {
           alt="Imagem de fundo com serviço de pintura residencial e comercial, mostrando profissionais pintando uma parede"
           priority
         />
+
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
         <div className="absolute text-center px-6 max-w-2xl">
           <h1 className="text-2xl md:text-4xl font-bold mb-4">
             Transforme Seu Ambiente com Pintura Residencial e Comercial de Qualidade
