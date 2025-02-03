@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import LogoIMG from "../../public/images/VCL-Pinturas.png";
+import LogoIMG from "../../public/images/1LOGOBRANCO-removebg-preview (1).png";
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
