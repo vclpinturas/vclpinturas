@@ -36,8 +36,8 @@ export default function Contato() {
             </div>
           </div>
 
-          <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Nossa Localização</h2>
+          <div className="space-y-4 mt-4">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Nossa Localização</h2>
             <p className="text-gray-600 mb-4">
               <strong>R. Marajó, N° 1258 - Vila Virginia, Ribeirão Preto - SP</strong><br />
               CEP: <strong>14030-500</strong>. <br /> Acesse nosso perfil no Google para mais detalhes:
@@ -52,7 +52,7 @@ export default function Contato() {
           </div>
         </div>
 
-        <div className="mt-8 w-full md:w-1/2 h-full p-4">
+        <div className="w-full md:w-1/2 h-full p-4">
           <div className="h-full">
             <iframe
               className="w-full h-96 md:h-80 rounded-lg"
